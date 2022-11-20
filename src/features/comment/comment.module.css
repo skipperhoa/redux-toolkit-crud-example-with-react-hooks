@@ -1,0 +1,123 @@
+*{
+    margin:0;padding:0;
+}
+.container{
+    width: 600px;
+    margin:20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+.boxcomment{
+    width: 100%;
+}
+.boxcomment label{
+    font-weight: bold;
+    display: block;
+    padding:10px 0;
+    text-align: left;
+}
+.boxcomment textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border:none;
+    background-color: #fff;
+}
+.boxcomment button{
+    padding: 8px;
+    background-color: green;
+    color:#fff;
+    border:none;
+}
+.listComments h3{
+    padding:5px 0;
+    color:red;
+    text-align: left;
+}
+.listComments ul li{
+    margin:5px 0px;
+    list-style: none;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.listComments ul li p.info{
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    width: 70%;
+   
+}
+.listComments ul li .control span{
+    padding:0 5px;
+    display: inline-block;
+    margin:0 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 13px;
+}
+.listComments ul li .control span:first-child{
+    background-color: red;
+    color:#000;
+}
+.listComments ul li .control span:last-child{
+    background-color: yellow;
+    color:#000;
+}
+
+.modal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    margin: 0 auto;
+    padding:10px;
+    box-sizing: border-box;
+    background-color: #787;
+    border-radius: 10px;
+    display: none;
+}
+.modal label{
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+.modal input{
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+    margin:5px 0;
+}
+.modal textarea{
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+}
+.modal button{
+    width: 100%;
+    border:none;
+    padding:8px;
+    box-sizing: border-box;
+    background-color: greenyellow;
+}
+.modal .close{
+    padding: 1px;
+    width: 30px;
+    display: block;
+    background: red;
+    box-sizing: border-box;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
